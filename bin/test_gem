@@ -1,0 +1,10 @@
+$LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
+
+#!/usr/bin/env ruby
+
+require 'test_gem'
+puts "test_gem script executing"
+puts ARGV[0]
+
+puts "Prints first line in file"
+puts TestGem::MyFile.first ARGV[0]
