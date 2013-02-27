@@ -15,6 +15,10 @@ module TestGem
         (MyFile.read_file file_name)[-1]
       end
 
-    end
+  end
+
+    class MyError < StandardError; end
+
+
   end
 
